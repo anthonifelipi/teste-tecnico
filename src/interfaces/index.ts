@@ -40,3 +40,29 @@ export interface IUserlogin {
   email: string;
   password: string;
 }
+
+export interface IContactRequest {
+  fullName: string;
+  email: string;
+  email2?: string;
+  phone: string;
+  phone2?: string;
+  userId: string;
+}
+
+export interface iContactResponse {
+  id: string;
+  fullName: string;
+  email: string;
+  email2?: string;
+  phone: string;
+  phone2?: string;
+}
+
+export interface IContactUpdateRequest {
+  fullName?: string;
+  email?: string;
+  email2?: string;
+  phone?: string;
+  phone2?: string;
+}
