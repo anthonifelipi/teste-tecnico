@@ -8,7 +8,7 @@ const updateUserService = async (
   idParams: any
 ) => {
   const user = await prisma.user.findUnique({ where: { id: dataUser.id } });
-  console.log(dataUser);
+
   if (!user) {
     throw new AppError("User not found", 404);
   }
